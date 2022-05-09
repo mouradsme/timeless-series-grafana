@@ -1,0 +1,34 @@
+{
+  "name": "mouradsme-timeless-series",
+  "version": "1.0.0",
+  "description": "A Timeless Series Graph, that can accept any kind of data for its x axis",
+  "scripts": {
+    "build": "grafana-toolkit plugin:build",
+    "test": "grafana-toolkit plugin:test",
+    "dev": "grafana-toolkit plugin:dev",
+    "watch": "grafana-toolkit plugin:dev --watch",
+    "sign": "grafana-toolkit plugin:sign",
+    "start": "yarn watch"
+  },
+  "author": "Mourad Bousserouel",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@grafana/data": "latest",
+    "@grafana/toolkit": "latest",
+    "@grafana/ui": "latest",
+    "emotion": "10.0.27"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "@szhsin/react-menu": "^3.0.0",
+    "chart.js": "3.6.0",
+    "chartjs-plugin-annotation": "^1.4.0",
+    "faker": "^6.6.6",
+    "react-chartjs-2": "^4.0.1",
+    "react-uplot": "0.0.7",
+    "uplot": "^1.6.19",
+    "uplot-react": "^1.1.1"
+  }
+}
