@@ -8,4 +8,5 @@ export interface SimpleOptions {
   Ignore: string;
   chartType: number;
   PieField: string;
+  bgColor: any;
 }

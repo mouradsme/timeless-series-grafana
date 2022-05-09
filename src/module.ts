@@ -42,7 +42,7 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).useFieldConfig
     .addTextInput({
       path: 'Ignore',
       name: 'Ignore',
-      description: 'Ignorer les colonnes suivantes (eg. "series_a, sereis_b, ...")',
+      description: 'Ignorer les colonnes suivantes (eg. "series_a, series_b, ...")',
       defaultValue: 'id, time',
     })
     .addTextInput({
@@ -55,7 +55,13 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).useFieldConfig
       path: 'borderColors',
       name: 'Contours',
       description: 'Couleurs de contour des series (eg. "red, green, ...")',
-      defaultValue: 'red, green, blue',
+      defaultValue: 'red, green, blue'    
+    })
+    .addColorPicker({
+      path: 'bgColor',
+      name: 'Couleur du fond',
+      description: 'Couleur du fond du graphe',
+      defaultValue: 'rgba(255, 255, 255, 0.6)'
     })
     
 });
